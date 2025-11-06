@@ -61,6 +61,7 @@ El proyecto se centra en exponer endpoints claros y seguir las buenas prácticas
         ```
 
 La aplicación estará disponible en `http://localhost:8080/api/tasks`.
+Se puede probar Swagger: `http://localhost:8080/swagger-ui/index.html`.
 
 > **Nota:** Al usar H2 en memoria, si detienes la aplicación, las tareas creadas se borrarán.
 
