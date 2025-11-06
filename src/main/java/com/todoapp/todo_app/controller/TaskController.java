@@ -5,6 +5,7 @@ import com.todoapp.todo_app.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
@@ -30,9 +31,10 @@ public class TaskController {
                 .orElse(ResponseEntity.notFound().build()); // Si no existe, devuelve código 404 Not Found
     }
 
-    // POST /api/tasks -> Crea una nueva tarea con los datos que vienen en el cuerpo (body) de la petición
+    // POST /api/tasks -> Crea una nueva tarea con los datos que vienen en el cuerpo
+    // (body) de la petición
     @PostMapping
-    public Task createTask(@RequestBody Task task) {
+    public Task createTask(@Valid @RequestBody Task task) {
         return taskService.createTask(task);
     }
 

@@ -44,7 +44,7 @@ El proyecto se centra en exponer endpoints claros y seguir las buenas prácticas
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/TU_USUARIO/todo-app.git](https://github.com/TU_USUARIO/todo-app.git)
+    git clone [https://github.com/malessan4/to-do-java-app.git](https://github.com/malessan4/to-do-java-app.git)
     ```
 2.  **Navegar al directorio:**
     ```bash
